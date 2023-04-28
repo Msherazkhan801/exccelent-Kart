@@ -1,0 +1,12 @@
+.category-slider{ 
+ display: block;
+ .image-wraper{
+ display: block;
+    img{
+       max-width: 95%;
+       height: auto;
+       margin-inline: auto;
+       border-radius: 20px;
+    }
+}
+}

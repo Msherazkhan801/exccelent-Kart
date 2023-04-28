@@ -1,0 +1,26 @@
+.sheos-category {
+  display: flex;
+  flex-direction: column;
+  .cat-text {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    gap: 46%;
+    margin-left: 530px;
+    h2 {
+      font-size: 26px;
+      font-weight: bold;
+      color: #000000;
+      font-family: fantasy;
+      text-transform: uppercase;
+    }
+    a {
+      font-size: 18px;
+      font-weight: bold;
+      color: #000000;
+      margin-top: 25px;
+      margin-left: 50px;
+      background-color: transparent;
+    }
+  }
+}

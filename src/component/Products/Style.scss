@@ -1,0 +1,28 @@
+.category{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.911);
+    margin-top: -5px;
+    .cat-text{
+        display: flex;
+        gap: 34%;
+        padding-top: 20px;
+        h2{
+            font-size: 26px;
+            font-weight: bold;
+            color: #fff;
+            font-family: fantasy;
+
+        }
+        span{
+            font-size: 18px;
+            font-weight: bold; 
+            color: #fff;
+            margin-top: 25px;
+            margin-left: 50px;
+
+        }
+    }
+
+
+}

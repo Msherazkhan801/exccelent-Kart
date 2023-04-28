@@ -1,0 +1,77 @@
+.nav-wraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  background-color: #fff;
+  max-height: max-content;
+  box-shadow: 0.5px 0.5px #2a2b2c3f;
+  .nav-left {
+    display: flex;
+    width: 50vw;
+    gap: 20px;
+
+    .free-shipping {
+      margin-left: 50px;
+      padding-top: 10px;
+    }
+    .free-social {
+      padding-top: 10px;
+    }
+  }
+  .free-social-icon {
+    padding-top: 10px;
+  }
+  .divider {
+    width: 1px;
+    height: 25px;
+    margin: 0 10px;
+    background-color: #ccc;
+    margin-top: 5px;
+  }
+  .nav-right {
+    display: flex;
+    width: 15vw;
+    gap: 30px;
+  }
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0px;
+  box-shadow: 0.5px 0.5px #2a2b2c3f;
+
+  .logo {
+    margin-left: 50px;
+    margin-top: 5px;
+  }
+  .category-nav {
+    display: flex;
+    gap: 30px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    margin-left: 110px;
+    span{
+        text-align: center;
+        font-size: bold;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: bolder;
+    }
+  }
+  .cart-wrapper{
+      gap: 20px;
+      display: flex;
+      span{
+        text-align: center;
+        font-size: bold;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: bold;
+    }
+}
+.menu-icon{
+margin-right: 10px;
+}
+}
