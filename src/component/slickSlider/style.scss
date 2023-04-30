@@ -7,6 +7,16 @@
        height: auto;
        margin-inline: auto;
        border-radius: 20px;
+       position: relative
+    }
+    .heading{
+      position:absolute;
+      top: 35%;
+      margin-left: 130px;
+      font-size: 26px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: bold;
+      color: #FFF;
     }
 }
 }

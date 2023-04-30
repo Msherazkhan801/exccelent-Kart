@@ -1,8 +1,8 @@
 import React from 'react'
 import Slider from "react-slick";
-import { ProductSliderData,sliderData } from '../../utills/Api';
+import { ProductSliderData,sliderData ,ShoesSliderData,ExplorMoreSliderData} from '../../utills/Api';
 import './style.scss'
-import { settings, mainSliderSettings } from '../../utills/SliderSetting';
+import { settings, mainSliderSettings,sheosettings } from '../../utills/SliderSetting';
 const ProductSlider = ({variant}) => {
 let content ;
 if(variant==='category'){
@@ -13,6 +13,24 @@ if(variant==='category'){
                     return (
                         <div key={data.id} className='image-wraper'>
                             <img src={data.image} alt='pic'/>
+                        </div>
+                    )
+                })
+    
+                }
+            </Slider>
+            </div>
+        ) 
+}
+if(variant==='explore'){
+    content=(
+            <div className='category-slider'>
+            <Slider {...settings} >
+                {ExplorMoreSliderData?.map((data) => {
+                    return (
+                        <div key={data.id} className='image-wraper'>
+                            <img src={data.image} alt='pic'/>
+                            <h3 className='heading'>{data.heading}</h3>
                         </div>
                     )
                 })
@@ -39,8 +57,8 @@ else if(variant==='mainSlider'){
 }
 else if(variant==='sheos'){
     content=  (   <div className='sliderWrapper'>
-    <Slider {...settings} >
-        {ProductSliderData?.map((data) => {
+    <Slider {...sheosettings} >
+        {ShoesSliderData?.map((data) => {
             return (
                 <div key={data.id} className='image-wraper'>
                     <img src={data.image} alt='pic'/>
