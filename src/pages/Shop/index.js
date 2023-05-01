@@ -5,6 +5,7 @@ import Shoes from '../../component/Shoes'
 import ExplorMore from '../../component/exploreMore'
 import AboutUs from '../About '
 import Fashion from '../../component/fashionStyle'
+import Footer from '../../component/Footer'
 
 const Shop = () => {
   return (
@@ -16,6 +17,7 @@ const Shop = () => {
         <Shoes text='best seller'/>
         <AboutUs/>
         <Fashion/>
+        <Footer/>
 
     </div>
   )
