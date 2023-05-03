@@ -3,16 +3,25 @@ import Slider from "react-slick";
 import { ProductSliderData,sliderData ,ShoesSliderData,ExplorMoreSliderData} from '../../utills/Api';
 import './style.scss'
 import { settings, mainSliderSettings,sheosettings } from '../../utills/SliderSetting';
-const ProductSlider = ({variant}) => {
+const ProductSlider = ({variant,womenSliderData,WomenProductSliderData,WomenShoesSliderData,WomenShoesSeller}) => {
 let content ;
 if(variant==='category'){
     content=(
             <div className='category-slider'>
             <Slider {...settings} >
-                {ProductSliderData?.map((data) => {
+                {WomenProductSliderData ? WomenProductSliderData.map((data) => {
                     return (
                         <div key={data.id} className='image-wraper'>
                             <img src={data.image} alt='pic'/>
+                            <h3 className='heading'>{data.heading}</h3>
+
+                        </div>
+                    )
+                }): ProductSliderData?.map((data) => {
+                    return (
+                        <div key={data.id} className='image-wraper'>
+                            <img src={data.image} alt='pic'/>
+                            <h3 className='heading'>{data.heading}</h3>
                         </div>
                     )
                 })
@@ -43,7 +52,13 @@ if(variant==='explore'){
 else if(variant==='mainSlider'){
     content=  (   <div className='sliderWrapper'>
     <Slider {...mainSliderSettings} >
-        {sliderData?.map((data) => {
+        {womenSliderData ?womenSliderData.map((data)=>{
+            return(
+                <div key={data.id} className='image-wraper'>
+                <img src={data.image} alt='pic'/>
+            </div>
+            )
+        }) :sliderData?.map((data) => {
             return (
                 <div key={data.id} className='image-wraper'>
                     <img src={data.image} alt='pic'/>
@@ -58,7 +73,19 @@ else if(variant==='mainSlider'){
 else if(variant==='sheos'){
     content=  (   <div className='sliderWrapper'>
     <Slider {...sheosettings} >
-        {ShoesSliderData?.map((data) => {
+        {WomenShoesSliderData ? WomenShoesSliderData?.map((data) => {
+            return (
+                <div key={data.id} className='image-wraper'>
+                    <img src={data.image} alt='pic'/>
+                </div>
+            )
+        })  : WomenShoesSeller ?WomenShoesSeller?.map((data) => {
+            return (
+                <div key={data.id} className='image-wraper'>
+                    <img src={data.image} alt='pic'/>
+                </div>
+            )
+        }):  ShoesSliderData?.map((data) => {
             return (
                 <div key={data.id} className='image-wraper'>
                     <img src={data.image} alt='pic'/>
@@ -70,6 +97,7 @@ else if(variant==='sheos'){
     </Slider>
     </div>)
 }
+
 
 return content
   
