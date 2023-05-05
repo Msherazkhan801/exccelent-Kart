@@ -207,35 +207,45 @@ export const WomenProductSliderData=[
     
 ]
 export const ProductSliderData=[
-    {
+  
+       {
         id:1,
-        image:'../images/Sandal.webp',
-        heading:" STYLISH Shoes",
-        text:""
+        image:'../images/formal.webp',
+        heading:"Formal",
+        text:"",
+        secondaryimage:'../images/formalsec.webp'
+
     },
     {
         id:2,
         image:'../images/accessrieslogo.webp',
-        heading:"Accessories",
-        text:""
-    },
-    {
-        id:3,
-        image:'../images/formal.webp',
         heading:"Casual",
-        text:""
+        text:"",
+        secondaryimage:'../images/stylesh.webp'
+
+    },
+   {
+        id:3,
+        image:'../images/Sandal.webp',
+        heading:" Sandal",
+        text:"",
+        secondaryimage:'../images/sandalsec.webp'
     },
     {
         id:4,
         image:'../images/sheos.webp',
-        heading:"Foraml",
-        text:""
+        heading:"sleepers",
+        text:"",
+        secondaryimage:'../images/slipersec.webp'
+
     },
     {
         id:5,
         image:'../images/blacksleper.webp',
         heading:"Simple Style",
-        text:""
+        text:"",
+        secondaryimage:'../images/stylesh.webp'
+
     },
     
 ]

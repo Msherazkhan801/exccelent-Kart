@@ -42,9 +42,9 @@ const Navbar = () => {
                 </div>
                 <div className='cart-wrapper'>
                     <span className='free-social-icon'><img src={search} alt='pic' width='20px' height='20px' /></span>
-                    <span>Wishlist</span>
-                    <span>Cart</span>
-                    <span>Account</span>
+                   <Link to='/whishlist'><span>Wishlist</span></Link>
+                   <Link to='/cart'><span>Cart</span></Link>
+                   <Link to='/account'><span>Account</span></Link>
                     <span className='free-social-icon menu-icon'><img src={menu} alt='pic' width='20px' height='20px' /></span>
                 </div>
 

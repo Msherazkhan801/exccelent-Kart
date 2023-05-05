@@ -7,8 +7,8 @@ import './Style.scss'
 const Home = () => {
 
   const navigate = useNavigate()
-  const handleClick = () => {
-    navigate('/men')
+  const handleClick = (link) => {
+    navigate(link)
 
   }
   return (
@@ -16,7 +16,7 @@ const Home = () => {
     <VideoPlayer
       className="video"
       src={
-        "https://player.vimeo.com/external/435674703.sd.mp4?s=01ad1ba21dc72c1d34728e1b77983805b34daad7&profile_id=165&oauth2_token_id=57447761"
+        "https://cdn.shopify.com/videos/c/o/v/43fd4642a60d41a89676c0828fa3ebb8.mp4"
       }
       autoPlay={true}
       muted={true}
@@ -24,8 +24,14 @@ const Home = () => {
     <div className="mainInput">
       <img src={logo} alt='logo' width={'100px'} height='100px'/>
       <Button
-        text='Lets Start'
-        handleClick={handleClick}
+        text='MEN'
+        handleClick={()=>handleClick("/men")}
+        className='btn-start'
+
+      />
+      <Button
+        text='WOMEN'
+        handleClick={()=>handleClick('/women')}
         className='btn-start'
 
       />
