@@ -7,7 +7,7 @@ import { Link, useNavigate } from 'react-router-dom';
 const ProductSlider = ({ variant, womenSliderData, WomenProductSliderData, WomenShoesSliderData, WomenShoesSeller }) => {
     const navigate= useNavigate()
     const handleNavigate =(id) =>{
-        navigate(`/colletion/${id}`)
+            // navigate(`/colletion/${id}`)
     }
     let content;
     if (variant === 'category') {
@@ -16,17 +16,17 @@ const ProductSlider = ({ variant, womenSliderData, WomenProductSliderData, Women
                 <Slider {...settings} >
                     {WomenProductSliderData ? WomenProductSliderData.map((data) => {
                         return (
-                     <Link to={`/collection/${data.id}`}><div key={data.id} className='image-wraper' onClick={()=>handleNavigate(data.id)} >
+                     <Link to={`/women-colletion/${data.id}`}><div key={data.id} className='image-wraper' onClick={()=>handleNavigate(data.id,true)} >
                                  <img src={data.image} alt='pic' />
                                 <h3 className='heading'>{data.heading}</h3>
                             </div></Link>
                         )
                     }) : ProductSliderData?.map((data) => {
                         return (
-                            <div key={data.id} className='image-wraper'  onClick={()=>handleNavigate(data.id)}>
+                     <Link to={`/colletion/${data.id}`}><div key={data.id} className='image-wraper' onClick={()=>handleNavigate(data.id,false)} >
                                 <img src={data.image} alt='pic' />
                                 <h3 className='heading'>{data.heading}</h3>
-                            </div>
+                            </div></Link>
                         )
                     })
 

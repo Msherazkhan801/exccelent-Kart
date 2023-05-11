@@ -1,0 +1,45 @@
+h1, h2,h5,h6,p{
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  text-align: left;
+}
+
+h6 {
+  color: #9E9E9E;
+  font-style: italic;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.card {
+  background-color: #FFFFFF;
+  margin: 50px auto;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px #BDBDBD;
+}
+.card__image {
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  max-height: 200px;
+}
+.card__copy {
+  padding: 20px;
+  h5{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .rating{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    span{
+        font-size: 12px;
+
+    }
+    span:last-child{
+        cursor: pointer;
+    }
+  }
+}

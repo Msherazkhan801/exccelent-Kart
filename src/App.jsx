@@ -11,6 +11,7 @@ import Whishlist from "./pages/Whishlist";
 import Cart from "./pages/Cart";
 import Account from "./pages/Account";
 import Collection from "./pages/Collection";
+import WomenCollection from "./pages/Collection/WomenCollection";
 function App() {
   return (
     <>
@@ -22,6 +23,7 @@ function App() {
       <Route path="/women" element={<WomenShop />}/>
       <Route path="/whishlist" element={<Whishlist />}/>
       <Route path="/colletion/:id" element={<Collection />}/>
+      <Route path="/women-colletion/:id" element={<WomenCollection />}/>
       <Route path="/cart" element={<Cart />}/>
       <Route path="/account" element={<Account />}/>
       <Route path="*" element={<ErorPage />}/>

@@ -71,38 +71,54 @@ export const WomenShoesSliderData=[
     {
         id:1,
         image:'../images/blackheels.webp',
-        heading:"MEN STYLISH shoes",
-        text:""
+        heading:"women STYLISH shoes",
+        text:"soft and relaxable",
+        Rs:'32'
     },
     {
         id:2,
         image:'../images/bluechapal.webp',
-        heading:"",
-        text:""
+        heading:"Relax blue Shoes",
+         text:"soft and relaxable"
+         ,
+        Rs:'32'
+
     },
     {
         id:3,
         image:'../images/greenchapl.webp',
-        heading:"",
-        text:""
+        heading:"Flate Chapal",
+         text:"soft and relaxable"
+         ,
+        Rs:'32'
+
     },
     {
         id:4,
         image:'../images/goldenchapal.webp',
-        heading:"",
-        text:""
+        heading:"golden Chapal",
+         text:"soft and relaxable"
+         ,
+        Rs:'32'
+
     },
     {
         id:5,
         image:'../images/blacktransheels.webp',
-        heading:"",
-        text:""
+        heading:"black Flate",
+         text:"soft and relaxable"
+         ,
+        Rs:'32'
+
     },
     {
         id:5,
         image:'../images/pinkheels.webp',
-        heading:"",
-        text:""
+        heading:"Pink Heels",
+         text:"soft and relaxable"
+         ,
+        Rs:'32'
+
     },
     
 ]
@@ -111,37 +127,55 @@ export const ShoesSliderData=[
         id:1,
         image:'../images/clipshoes.webp',
         heading:"MEN STYLISH Shoes",
-        text:""
+            text:"soft and relaxable"
+            ,
+        Rs:'32'
+
     },
     {
         id:2,
         image:'../images/shoes.webp',
         heading:"Formal",
-        text:""
+            text:"soft and relaxable"
+            ,
+        Rs:'32'
+
     },
     {
         id:3,
         image:'../images/blackchapal.webp',
         heading:"Casuals",
-        text:""
+            text:"soft and relaxable"
+            ,
+        Rs:'32'
+
     },
     {
         id:4,
         image:'../images/blackchapalzoom.webp',
-        heading:"",
-        text:""
+        heading:"Flate",
+            text:"soft and relaxable"
+            ,
+        Rs:'32'
+
     },
     {
         id:5,
         image:'../images/wholeshoes.webp',
-        heading:"",
-        text:""
+        heading:"stylish shoes",
+            text:"soft and relaxable"
+            ,
+        Rs:'32'
+
     },
     {
         id:5,
         image:'../images/peshawarichapal.jpeg',
-        heading:"",
-        text:""
+        heading:"Peshawari ",
+            text:"soft and relaxable"
+            ,
+        Rs:'32'
+
     },
     
 ]
@@ -177,13 +211,15 @@ export const WomenProductSliderData=[
     {
         id:1,
         image:'../images/Accessoriesparse.webp',
-        heading:"Accesories",
+        secondaryimage:'../images/highheel.webp',
+        heading:"High Heels",
         text:""
     },
     {
         id:2,
         image:'../images/Flatwomensandal.webp',
-        heading:"Simple Shoes",
+        secondaryimage:'../images/flatecollection.webp',
+        heading:"Flate Shoes",
         text:""
     },
     {
